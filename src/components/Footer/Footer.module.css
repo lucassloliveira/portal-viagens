@@ -1,0 +1,16 @@
+.footer {
+    background-color: #0f172a;
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto {
+    color: #475569;
+    font-size: 0.85rem;
+}

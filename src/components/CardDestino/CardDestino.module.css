@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.imagemWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.imagem {
+    object-fit: cover;
+}
+
+.pais {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(12, 23, 42, 0.75);
+    color: #f8f1fc;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+}
+
+.info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.nome {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.descricao {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-ordinal: vertical;
+    overflow: hidden;
+}
+
+.verMais {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #3b82f6;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
