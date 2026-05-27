@@ -9,7 +9,6 @@ type Props = {
     params: Promise<{ id:string }>
 }
 
-// Cada página de destino terá seu prórpio <title> e <metadescription>
 export async function generateMetadata({ params }: Props) {
     const { id } = await params;
     const destino = destinos.find((d) => d.id === id);
@@ -67,7 +66,7 @@ export default async function DetalheDestino({ params }: Props) {
 
                     <div className={styles.destaqueBox}>
                         <h2 className={styles.secaoTitulo}>Pontos turísticos</h2>
-                        <ul className={styles.list}>
+                        <ul className={styles.lista}>
                             {destino.destaque.map((ponto) => (
                                 <li key={ponto} className={styles.item}>
                                     📍 {ponto}

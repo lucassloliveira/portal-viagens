@@ -13,11 +13,11 @@ export default function Destinos() {
                         Escolha seu próximo destino e comece a planejar sua aventura
                     </p>
                 </div>
-            </div>
-            <div className={styles.grid}>
+                <div className={styles.grid}>
                 {destinos.map((destino) => (
                     <CardDestino key={destino.id} destino={destino} />
                 ))}
+                </div>
             </div>
         </Layout>
     )
