@@ -35,6 +35,21 @@
   margin-top: 0.5rem;
 }
 
+.botao {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-top: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
 .botao:hover {
   background-color: #2563eb;
   transform: translateY(-2px);
